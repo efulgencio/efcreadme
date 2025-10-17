@@ -102,3 +102,8 @@ target 'MyAppTests' do
   pod 'Quick'
   pod 'Nimble'
 end
+
+install! 'cocoapods',
+  :clean => true,                    # Elimina archivos temporales antes de instalar
+  :warn_for_unused_master_specs_repo => false,  # Evita avisos innecesarios
+  :integrate_targets => true         # Integra los pods al proyecto Xcode
