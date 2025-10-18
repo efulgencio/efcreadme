@@ -1,10 +1,9 @@
-# 🧩 efcspm
+### 🧩 efcspm
 
 **efcspm** es un paquete de utilidades comunes para proyectos **SwiftUI** y **SwiftData**, que proporciona *helpers*, *extensiones* y *servicios reutilizables* para acelerar el desarrollo de aplicaciones iOS.
 
----
 
-## 📦 Instalación
+### 📦 Instalación
 
 ### Swift Package Manager (SPM)
 
@@ -17,9 +16,8 @@ En Xcode:
    ```
 3. Selecciona la versión y añade el paquete a tu target.
 
----
 
-## 🧩 Ejemplo de uso
+### 🧩 Ejemplo de uso
 
 ```swift
 import efcspm
@@ -34,13 +32,11 @@ O en SwiftUI:
 Text(EFCSPM.hello())
 ```
 
----
 
 ## 📱 Demo iOS
 
 En la carpeta `Example/` encontrarás un proyecto Xcode con una pequeña app SwiftUI que importa y muestra funciones del paquete.
 
----
 
 ## 👤 Autor
 
@@ -49,7 +45,7 @@ En la carpeta `Example/` encontrarás un proyecto Xcode con una pequeña app Swi
 💼 [LinkedIn](https://www.linkedin.com/in/eduardofulgenciocomendeiro)  
 📦 [GitHub](https://github.com/eduardofulgencio)
 
----
+
 
 ## 📜 Licencia
 

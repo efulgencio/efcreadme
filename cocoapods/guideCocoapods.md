@@ -1,11 +1,10 @@
-# 📘 Guía completa de CocoaPods para iOS
+### 📘 Guía completa de CocoaPods para iOS
 
 CocoaPods es un **gestor de dependencias** para proyectos iOS y macOS.  
 Permite integrar librerías de terceros fácilmente en tus proyectos Xcode.
 
----
 
-## ⚙️ Instalación e inicialización
+### ⚙️ Instalación e inicialización
 
 ### 🔹 1. Instalar CocoaPods
 
@@ -19,8 +18,6 @@ Verifica la instalación:
 pod --version
 ```
 
----
-
 ### 🔹 2. Configurar CocoaPods
 
 ```bash
@@ -32,8 +29,6 @@ pod setup --verbose
 - `--verbose` muestra salida detallada.  
 - Solo se ejecuta una vez (o para forzar la actualización del repo).
 
----
-
 ### 🔹 3. Crear el Podfile
 
 ```bash
@@ -42,9 +37,8 @@ pod init
 
 🧩 Crea un archivo `Podfile` donde defines las dependencias de tu proyecto.
 
----
 
-## 📄 Estructura del Podfile
+### 📄 Estructura del Podfile
 
 ```ruby
 # platform :ios, '9.0'
@@ -66,9 +60,7 @@ Compila los Pods como **frameworks dinámicos**, necesarios para Swift.
 #### 🔸 `pod 'Nombre', 'Versión'`
 Declara la dependencia y su versión.
 
----
-
-## 🔄 Instalar y actualizar dependencias
+### 🔄 Instalar y actualizar dependencias
 
 ### `pod install`
 Instala las librerías declaradas en el `Podfile` y genera `Podfile.lock`.
@@ -76,9 +68,8 @@ Instala las librerías declaradas en el `Podfile` y genera `Podfile.lock`.
 ### `pod update`
 Actualiza las dependencias existentes a las versiones más recientes compatibles.
 
----
 
-## 🧹 Limpieza de dependencias
+### 🧹 Limpieza de dependencias
 
 ```bash
 rm -rf Pods
@@ -86,9 +77,7 @@ rm Podfile.lock
 pod install
 ```
 
----
-
-## 🧮 Versionado Semántico (Semantic Versioning)
+### 🧮 Versionado Semántico (Semantic Versioning)
 
 Formato: `MAJOR.MINOR.PATCH` → `1.0.0`
 
@@ -101,15 +90,13 @@ Formato: `MAJOR.MINOR.PATCH` → `1.0.0`
 Ejemplo:  
 `pod 'Toast-Swift', '~> 5.0.1'` → instala cualquier versión >= 5.0.1 pero < 6.0.0.
 
----
 
-## 🌐 Documentación oficial
+### 🌐 Documentación oficial
 
 📚 [Guía oficial de CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
 
----
 
-## ✅ Comandos útiles
+### ✅ Comandos útiles
 
 | Comando | Descripción |
 |----------|--------------|
@@ -122,9 +109,8 @@ Ejemplo:
 | `pod list` | Lista los pods instalados |
 | `pod outdated` | Muestra versiones nuevas disponibles |
 
----
 
-## 🧪 Ejemplo práctico: Integrar Toast-Swift con UIKit
+### 🧪 Ejemplo práctico: Integrar Toast-Swift con UIKit
 
 ### 1️⃣ Crear el proyecto Xcode
 - Abre Xcode → “Create a new iOS project” → App → UIKit.
@@ -171,7 +157,6 @@ class ViewController: UIViewController {
 
 Ejecuta la app en el simulador y verás un mensaje Toast.
 
----
 
 🎯 **Resumen final:**
 - `pod init` → crea Podfile  
@@ -181,6 +166,5 @@ Ejecuta la app en el simulador y verás un mensaje Toast.
 - `Podfile.lock` → controla versiones instaladas  
 - Abrir siempre el proyecto desde `.xcworkspace`
 
----
 
 © 2025 Guía CocoaPods — por Eduardo Fulgencio Comendeiro

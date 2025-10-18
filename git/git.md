@@ -10,7 +10,7 @@ Aquí te explico el proceso paso a paso de forma segura.
 4.  **Subir la nueva rama**: Enviarás tu nueva rama al repositorio de la empresa.
 5.  **Crear un Pull Request (PR)**: Iniciarás el proceso de integración en la plataforma de la empresa (GitHub, GitLab, etc.).
 
----
+
 
 ### Pasos Detallados
 

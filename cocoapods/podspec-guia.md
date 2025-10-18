@@ -1,6 +1,6 @@
-# 📦 Guía de Ficheros `.podspec` en CocoaPods
+### 📦 Guía de Ficheros `.podspec` en CocoaPods
 
-## 🧩 ¿Qué es un `.podspec`?
+### 🧩 ¿Qué es un `.podspec`?
 
 Un fichero **`.podspec`** (abreviatura de *Pod Specification*) es el **archivo de definición** que describe una librería o framework en CocoaPods.  
 Contiene la **información necesaria para instalar, compilar y distribuir** un pod, tanto en proyectos locales como en repositorios públicos o privados.
@@ -8,9 +8,9 @@ Contiene la **información necesaria para instalar, compilar y distribuir** un p
 En resumen:  
 > El `.podspec` es el "contrato" que dice a CocoaPods **qué es tu librería, dónde está su código y cómo debe integrarse.**
 
----
 
-## 🗂️ Estructura básica de un `.podspec`
+
+### 🗂️ Estructura básica de un `.podspec`
 
 Un `.podspec` es un fichero Ruby que define un objeto `Pod::Spec`.  
 Ejemplo mínimo:
@@ -35,9 +35,7 @@ Pod::Spec.new do |s|
 end
 ```
 
----
-
-## 🔍 Descripción de los principales campos
+### 🔍 Descripción de los principales campos
 
 | Campo | Descripción |
 |-------|--------------|
@@ -62,9 +60,8 @@ Ejemplo:
 s.dependency 'Alamofire', '~> 5.6'
 ```
 
----
 
-## 🧠 Ejemplo completo con dependencias
+### 🧠 Ejemplo completo con dependencias
 
 ```ruby
 Pod::Spec.new do |s|
@@ -95,9 +92,8 @@ Pod::Spec.new do |s|
 end
 ```
 
----
 
-## ⚙️ Validar un `.podspec`
+### ⚙️ Validar un `.podspec`
 
 Antes de publicarlo o usarlo localmente, es recomendable validar su sintaxis y metadatos:
 
@@ -110,9 +106,8 @@ Si lo estás usando en local y no quieres validaciones online:
 pod lib lint MiFramework.podspec --allow-warnings --sources='https://github.com/CocoaPods/Specs.git'
 ```
 
----
 
-## 📦 Publicar un `.podspec`
+### 📦 Publicar un `.podspec`
 
 ### 1️⃣ Registrar el repositorio de especificaciones (solo si es privado)
 ```bash
@@ -129,9 +124,8 @@ pod repo push mi-repo-specs MiFramework.podspec
 pod trunk push MiFramework.podspec
 ```
 
----
 
-## 🧰 Usarlo desde un proyecto
+### 🧰 Usarlo desde un proyecto
 
 En el `Podfile`:
 ```ruby
@@ -143,9 +137,8 @@ O si estás desarrollando en local:
 pod 'MiFramework', :path => '../MiFramework'
 ```
 
----
 
-## 💡 Buenas prácticas
+### 💡 Buenas prácticas
 
 - Sigue **Semantic Versioning (1.0.0)** para versiones.
 - Usa `swift_versions` para evitar incompatibilidades.
@@ -154,14 +147,12 @@ pod 'MiFramework', :path => '../MiFramework'
 - Valida siempre antes de publicar (`pod lib lint`).
 - Si usas un repo privado, documenta su `source`.
 
----
 
-## 🔗 Recursos oficiales
+### 🔗 Recursos oficiales
 
 - 📘 [Guía oficial de `.podspec` — CocoaPods Docs](https://guides.cocoapods.org/syntax/podspec.html)
 - 🧱 [Publicar tus propios Pods](https://guides.cocoapods.org/making/making-a-cocoapod.html)
 - 🧩 [CocoaPods Specs Repo](https://github.com/CocoaPods/Specs)
 
----
 
 © 2025 — Guía creada para desarrolladores iOS que deseen crear, mantener y distribuir sus propias librerías CocoaPods.

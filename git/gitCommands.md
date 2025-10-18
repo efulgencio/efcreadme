@@ -1,6 +1,6 @@
-# Guía de Comandos de Git
+### Guía de Comandos de Git
 
-## Índice
+### Índice
 
 -   [Crear un nuevo repositorio en GitHub](#cómo-crear-un-nuevo-repositorio-en-github)
 -   [Subir un repositorio local a GitHub (Método Manual)](#cómo-subir-un-repositorio-local-a-github-método-manual)
@@ -14,9 +14,9 @@
 -   [Identificar el repositorio remoto y el usuario local](#cómo-identificar-el-repositorio-remoto-y-el-usuario-local)
 -   [Git vs. GitHub CLI: ¿Cuál es la diferencia?](#git-vs-github-cli-gh-cuál-es-la-diferencia)
 
----
 
-# Cómo crear un nuevo repositorio en GitHub
+
+### Cómo crear un nuevo repositorio en GitHub
 
 Para crear un nuevo repositorio en GitHub desde la línea de comandos, la forma más sencilla es usar la herramienta oficial de GitHub, llamada **GitHub CLI** (`gh`).
 
@@ -49,9 +49,9 @@ gh repo create nombre-del-repositorio --public
 gh repo create nombre-del-repositorio --public --source=. --push
 ```
 
----
 
-## Cómo subir un repositorio local a GitHub (Método Manual)
+
+### Cómo subir un repositorio local a GitHub (Método Manual)
 
 Si no tienes GitHub CLI (`gh`), este es el proceso tradicional.
 
@@ -145,9 +145,9 @@ Envía los commits de tu repositorio local al remoto (GitHub).
 # Si ya usaste 'git push -u origin main' la primera vez, ahora solo necesitas esto.
 git push
 ```
----
 
-## Cómo revertir cambios en Git
+
+### Cómo revertir cambios en Git
 
 Equivocarse es normal. Git ofrece maneras seguras de deshacer cambios.
 
@@ -204,9 +204,8 @@ Después de esto, puedes corregir los ficheros y hacer un nuevo commit.
 # que contenía. Los cambios se perderán si no los tienes guardados en otro sitio.
 git reset --hard HEAD~1
 ```
----
 
-## Cómo sincronizar con cambios remotos (antes de subir los tuyos)
+### Cómo sincronizar con cambios remotos (antes de subir los tuyos)
 
 Para evitar conflictos, antes de subir tus cambios (`git push`), siempre es buena idea traer los cambios que otros han subido.
 
@@ -335,9 +334,8 @@ Ahora que el conflicto está resuelto y el 'merge commit' está creado en tu rep
 ```bash
 git push
 ```
----
 
-## Cómo etiquetar commits con versiones (Tags)
+### Cómo etiquetar commits con versiones (Tags)
 
 Los tags se usan para señalar puntos específicos en el historial de un repositorio, normalmente para marcar lanzamientos de versiones (ej: `v1.0.0`, `v2.1-beta`).
 
@@ -390,9 +388,8 @@ git tag -d v1.0.0
 # Esto requiere una sintaxis especial.
 git push --delete origin v1.0.0
 ```
----
 
-## Cómo buscar commits por su mensaje
+### Cómo buscar commits por su mensaje
 
 Puedes buscar en el historial de commits por palabras clave en sus mensajes.
 
@@ -426,7 +423,7 @@ Esta es la forma más completa de buscar, ya que revisa todo el historial conoci
 # El flag '--all' le dice a git que busque en todas las ramas.
 git log --all --grep="session" -i
 ```
----
+
 
 ## Cómo ver el commit de un tag específico
 
@@ -449,7 +446,7 @@ Si solo quieres ver la información del commit pero no los cambios del fichero, 
 # El '-1' limita la salida a un solo commit.
 git log -1 v1.0.0
 ```
----
+
 
 ## Cómo identificar el repositorio remoto y el usuario local
 
