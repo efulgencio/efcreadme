@@ -13,7 +13,7 @@ Permite automatizar tareas como:
 
 Ideal para desarrolladores que quieren optimizar flujos de trabajo desde macOS.
 
----
+
 
 ## ⚙️ Instalación en macOS
 
@@ -35,7 +35,6 @@ Deberías ver algo como:
 jfrog version 2.59.0
 ```
 
----
 
 ## 🔐 Configuración inicial
 
@@ -55,7 +54,6 @@ Para listar las configuraciones guardadas:
 jfrog config show
 ```
 
----
 
 ## 🧱 Comandos Básicos
 
@@ -74,7 +72,7 @@ jfrog rt upload "dist/app-release.apk" mobile-repo/
 
 👉 Puedes usar comodines (`*`, `**`) y rutas relativas.
 
----
+
 
 ### 📥 Descargar artefactos
 
@@ -90,7 +88,6 @@ O con comodines:
 jfrog rt download "mi-repo-local/*.zip" ./builds/
 ```
 
----
 
 ### 🧹 Borrar artefactos
 
@@ -105,7 +102,6 @@ Con filtro de fecha:
 jfrog rt del "mi-repo-local/*.zip" --older-than=30d
 ```
 
----
 
 ### 🔍 Buscar artefactos
 
@@ -121,7 +117,6 @@ También puedes añadir filtros:
 jfrog rt s "libs-release-local/*.jar" --props "version=1.0.0"
 ```
 
----
 
 ## 🧩 Propiedades de Artefactos
 
@@ -137,7 +132,6 @@ Consultar propiedades:
 jfrog rt gp "mi-repo-local/app.zip"
 ```
 
----
 
 ## 🧱 Gestión de Builds
 
@@ -178,8 +172,6 @@ Borrar configuración del CLI:
 jfrog config remove artifactory-server
 ```
 
----
-
 ## 🚀 Automatizaciones Útiles (macOS Terminal)
 
 ### Subir automáticamente el build actual
@@ -199,7 +191,7 @@ chmod +x upload_build.sh
 ./upload_build.sh
 ```
 
----
+
 
 ## 🔒 Seguridad
 
@@ -211,7 +203,7 @@ chmod +x upload_build.sh
   export JFROG_CLI_HOME_DIR=~/.jfrog
   ```
 
----
+
 
 ## 📚 Recursos Oficiales
 
@@ -220,7 +212,7 @@ chmod +x upload_build.sh
 - 🧪 Ejemplos CLI: [https://github.com/jfrog/jfrog-cli](https://github.com/jfrog/jfrog-cli)
 - 🧱 Documentación Artifactory: [https://jfrog.com/artifactory/](https://jfrog.com/artifactory/)
 
----
+
 
 ## 🧾 Resumen rápido de comandos
 
@@ -235,7 +227,7 @@ chmod +x upload_build.sh
 | `jfrog rt bp` | Publica un build. |
 | `jfrog rt repo-list` | Lista repositorios. |
 
----
+
 
 **Autor:** Guía generada por ChatGPT (Eduardo Fulgencio Comendeiro)  
 **Fecha:** Octubre 2025  

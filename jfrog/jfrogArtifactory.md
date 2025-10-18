@@ -12,7 +12,6 @@ JFrog es la empresa creadora de esta herramienta, junto con otras soluciones com
 - **JFrog Distribution** → distribución segura de binarios  
 - **JFrog Mission Control** → gestión centralizada de múltiples instancias
 
----
 
 ## 🏗️ Conceptos Clave
 
@@ -22,7 +21,6 @@ JFrog es la empresa creadora de esta herramienta, junto con otras soluciones com
 | **Remoto** | Proxy o caché de repositorios externos (ej. npmjs, Maven Central, CocoaPods, etc.). |
 | **Virtual** | Agrupa varios repositorios (locales y remotos) bajo una misma URL de acceso. |
 
----
 
 ## ⚙️ Instalación (Local con Docker)
 
@@ -39,7 +37,6 @@ docker run --name artifactory -d -p 8081:8081 -p 8082:8082   -v artifactory-data
   Password: password
   ```
 
----
 
 ## 🌍 Versiones Disponibles
 
@@ -50,7 +47,7 @@ docker run --name artifactory -d -p 8081:8081 -p 8082:8082   -v artifactory-data
 | **Cloud (SaaS)** | Servicio gestionado por JFrog. |
 | **On-Premise** | Instalación en servidores propios. |
 
----
+
 
 ## 🧱 Ejemplo de Uso con npm
 
@@ -74,7 +71,7 @@ npm publish
 npm install mi-paquete
 ```
 
----
+
 
 ## 🍎 Ejemplo de Uso con CocoaPods
 
@@ -96,7 +93,6 @@ Luego instala los pods:
 pod install
 ```
 
----
 
 ## 🔄 Integración con CI/CD
 
@@ -130,7 +126,6 @@ jobs:
           npm publish
 ```
 
----
 
 ## 🧩 Ventajas de Usar Artifactory
 
@@ -141,7 +136,7 @@ jobs:
 - Versionado y trazabilidad de artefactos.
 - Compatibilidad con más de 30 tipos de paquetes (npm, Maven, Docker, NuGet, CocoaPods, Swift, etc).
 
----
+
 
 ## 🧰 Limpieza y Mantenimiento
 
@@ -174,7 +169,7 @@ jfrog rt download repo-local/myartifact.zip .
 - Escaneo de vulnerabilidades con **JFrog Xray**.
 - Integración LDAP y SSO.
 
----
+
 
 ## 📚 Recursos Oficiales
 
@@ -183,7 +178,7 @@ jfrog rt download repo-local/myartifact.zip .
 - 🧰 JFrog CLI: [https://jfrog.com/getcli/](https://jfrog.com/getcli/)
 - 🧪 Ejemplos de integración: [https://github.com/jfrog](https://github.com/jfrog)
 
----
+
 
 ## 🧾 Resumen Rápido
 
@@ -196,7 +191,7 @@ jfrog rt download repo-local/myartifact.zip .
 | `jfrog rt del` | Borra artefactos antiguos. |
 | `jfrog rt bce` / `jfrog rt bp` | Maneja builds completos. |
 
----
+
 
 **Autor:** Guía generada por ChatGPT (Eduardo Fulgencio Comendeiro)  
 **Fecha:** Octubre 2025  
