@@ -199,6 +199,7 @@ Usa esta versión si mantienes un repositorio de specs
 (coo /Users/eofc/Projects/repo-local) y publicas versiones
 
 ´´´
+
 Pod::Spec.new do |s|
   s.name             = "MiFramework"
   s.version          = "1.0.0"
