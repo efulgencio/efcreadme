@@ -109,4 +109,37 @@ pod repo update
 pod search MiFramework
  ´´´
 
+ ### Este es el pod que me ha funcionado para MiFramework
+
+ ´´´
+ platform :ios, '15.0'
+use_frameworks!
+
+target 'UseCocoaPodsLocal' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  pod 'MiFramework', :path => '/Users/eofc/Projects/MiFramework'
+  # Pods for UseCocoaPodsLocal
+
+end
+´´´
+
+### El contenido de MiFramework.podspec
+
+´´´
+Pod::Spec.new do |s|
+  s.name             = 'MiFramework'
+  s.version          = '1.0.0'
+  s.summary          = 'Un framework local de ejemplo.'
+  s.description      = 'Ejemplo de cómo usar un pod local con un repo local.'
+  s.homepage         = 'https://github.com/eduardo/MiFramework'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Eduardo Fulgencio' => 'eduardo@ejemplo.com' }
+  s.source           = { :path => '.' }
+  s.ios.deployment_target = '15.0'
+  s.swift_versions   = ['5.9']
+  s.source_files     = 'Sources/**/*.{swift}'
+end
+
+´´´
+
 © 2025 — Ejemplo educativo para desarrolladores iOS que trabajan con CocoaPods locales.
