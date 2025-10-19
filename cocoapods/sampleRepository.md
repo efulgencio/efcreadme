@@ -147,7 +147,7 @@ end
 
 Ideal si estás desarrollando tu framework y lo pruebas en tus propios proyectos
 
-´´´
+```
 Pod::Spec.new do |s|
   s.name             = "MiFramework"
   s.version          = "1.0.0"
@@ -178,11 +178,11 @@ Pod::Spec.new do |s|
   # s.frameworks     = "UIKit", "SwiftUI"
 end
 
-´´´
+```
 
 ### Profile de tu app 
 
-´´´
+```
 platform :ios, '15.0'
 use_frameworks!
 
@@ -190,7 +190,7 @@ target 'UseCocoaPodsLocal' do
   pod 'MiFramework', :path => '/Users/eofc/Projects/MiFramework'
 end
 
-´´´
+```
 
 ### Plantillas para desarrollo local 
 #### Opción B
@@ -198,7 +198,7 @@ end
 Usa esta versión si mantienes un repositorio de specs 
 (coo /Users/eofc/Projects/repo-local) y publicas versiones
 
-´´´
+```
 
 Pod::Spec.new do |s|
   s.name             = "MiFramework"
@@ -224,11 +224,11 @@ Pod::Spec.new do |s|
   # s.frameworks     = "UIKit", "SwiftUI"
 end
 
-´´´
+```
 
 Podfile 
 
-´´´
+```
 source '/Users/eofc/Projects/repo-local'
 source 'https://cdn.cocoapods.org/'
 
@@ -239,7 +239,7 @@ target 'UseCocoaPodsLocal' do
   pod 'MiFramework', '1.0.0'
 end
 
-´´´
+```
 
 
 
