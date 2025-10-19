@@ -147,7 +147,7 @@ end
 
 Ideal si estás desarrollando tu framework y lo pruebas en tus propios proyectos
 
-```
+```ruby
 Pod::Spec.new do |s|
   s.name             = "MiFramework"
   s.version          = "1.0.0"
@@ -182,7 +182,7 @@ end
 
 ### Profile de tu app 
 
-```
+```ruby
 platform :ios, '15.0'
 use_frameworks!
 
@@ -198,7 +198,7 @@ end
 Usa esta versión si mantienes un repositorio de specs 
 (coo /Users/eofc/Projects/repo-local) y publicas versiones
 
-```
+```ruby
 
 Pod::Spec.new do |s|
   s.name             = "MiFramework"
@@ -228,7 +228,7 @@ end
 
 Podfile 
 
-```
+```ruby
 source '/Users/eofc/Projects/repo-local'
 source 'https://cdn.cocoapods.org/'
 
