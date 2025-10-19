@@ -1,4 +1,4 @@
-´´´gitignore
+```gitignore
 # ============================================
 # 🧩 Xcode & macOS
 # ============================================
@@ -92,17 +92,17 @@ Icon
 # Backups de editores
 *~
 
-´´´
+```
 
 📌 Instrucciones:
 Crea el archivo .gitignore en la raíz de tu repositorio (junto al .xcodeproj o .xcworkspace).
 Pega este contenido.
 Ejecuta en la terminal:
 
-´´´
+```
 git rm -r --cached .
 git add .
 git commit -m "Añadir .gitignore para Xcode + CocoaPods"
-´´´
+```
 
 Esto limpia del índice los archivos ignorados previamente subidos (por ejemplo, Pods/ o DerivedData/) y deja solo lo necesario.
