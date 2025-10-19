@@ -101,5 +101,12 @@ Deberías ver:
 - Incluye un `LICENSE` y `README` en tus pods.
 
 
+### A veces CocoaPods cachea los resultados. Puedes forzar una limpieza:
+
+ ´´´
+pod cache clean --all
+pod repo update
+pod search MiFramework
+ ´´´
 
 © 2025 — Ejemplo educativo para desarrolladores iOS que trabajan con CocoaPods locales.
