@@ -1,10 +1,9 @@
-# 📝 Guía de Formateo en Markdown
+### 📝 Guía de Formateo en Markdown
 
 Este documento muestra ejemplos prácticos de **formateo Markdown** que puedes usar en tus propios archivos `.md`.
 
----
 
-## 📚 Índice
+### 📚 Índice
 
 1. [Títulos y subtítulos](#-títulos-y-subtítulos)
 2. [Negrita, cursiva y tachado](#-negrita-cursiva-y-tachado)
@@ -17,9 +16,8 @@ Este documento muestra ejemplos prácticos de **formateo Markdown** que puedes u
 9. [Notas, avisos y tips](#-notas-avisos-y-tips)
 10. [Ejemplo completo](#-ejemplo-completo)
 
----
 
-## #️⃣ Títulos y subtítulos
+### #️⃣ Títulos y subtítulos
 
 Usa `#` para crear títulos y subtítulos.  
 Cada `#` adicional baja un nivel jerárquico:
@@ -36,9 +34,8 @@ Cada `#` adicional baja un nivel jerárquico:
 ### Título nivel 3
 #### Título nivel 4
 
----
 
-## ✍️ Negrita, cursiva y tachado
+### ✍️ Negrita, cursiva y tachado
 
 ```markdown
 **Negrita**
@@ -52,9 +49,8 @@ Cada `#` adicional baja un nivel jerárquico:
 ~~Tachado~~  
 **_Negrita y cursiva_**
 
----
 
-## 🧾 Listas
+### 🧾 Listas
 
 ### 🔹 Listas no ordenadas
 ```markdown
@@ -82,9 +78,8 @@ Cada `#` adicional baja un nivel jerárquico:
 2. Paso dos
 3. Paso tres
 
----
 
-## 💬 Citas
+### 💬 Citas
 
 ```markdown
 > Esta es una cita simple.
@@ -96,9 +91,8 @@ Cada `#` adicional baja un nivel jerárquico:
 >  
 > Puedes escribir varias líneas y todas formarán parte de la misma cita.
 
----
 
-## 🔗 Enlaces e imágenes
+### 🔗 Enlaces e imágenes
 
 ### Enlace
 
@@ -116,9 +110,9 @@ Cada `#` adicional baja un nivel jerárquico:
 
 ![Texto alternativo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
 
----
 
-## 💻 Bloques de código
+
+### 💻 Bloques de código
 
 Usa tres acentos graves ```` ``` ```` para encerrar el código.
 
@@ -133,9 +127,8 @@ let usuario = Persona(nombre: "Eduardo", edad: 35)
 print(usuario)
 ```
 
----
 
-## 📊 Tablas
+### 📊 Tablas
 
 ```markdown
 | Nombre     | Edad | Ciudad       |
@@ -151,9 +144,9 @@ print(usuario)
 | Luis | 34 | Barcelona |
 | Marta | 22 | Valencia |
 
----
 
-## 🧱 Líneas divisorias
+
+### 🧱 Líneas divisorias
 
 ```markdown
 ---
@@ -165,9 +158,9 @@ ___
 ***
 ___
 
----
 
-## 💡 Notas, avisos y tips
+
+### 💡 Notas, avisos y tips
 
 ```markdown
 > ⚠️ **Aviso:** Recuerda guardar tus cambios antes de cerrar.
@@ -179,9 +172,9 @@ ___
 > 💡 **Consejo:** Usa atajos de teclado para acelerar tu flujo de trabajo.  
 > ✅ **Hecho:** Configuración completada correctamente.
 
----
 
-## 🧩 Ejemplo completo
+
+### 🧩 Ejemplo completo
 
 ```markdown
 # Proyecto Demo
@@ -235,5 +228,5 @@ swift run
 ### Licencia
 MIT © 2025 Tu Nombre
 
----
+
 📘 *Guía creada para practicar Markdown en archivos README.md*
