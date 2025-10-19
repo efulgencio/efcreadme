@@ -1,6 +1,6 @@
-# 🧰 Guía Práctica de JFrog CLI (para desarrolladores en macOS)
+### 🧰 Guía Práctica de JFrog CLI (para desarrolladores en macOS)
 
-## 📘 Introducción
+### 📘 Introducción
 
 **JFrog CLI** es una herramienta de línea de comandos que permite interactuar con **JFrog Artifactory**, **Xray**, y otros servicios JFrog directamente desde el terminal.
 
@@ -15,7 +15,7 @@ Ideal para desarrolladores que quieren optimizar flujos de trabajo desde macOS.
 
 
 
-## ⚙️ Instalación en macOS
+### ⚙️ Instalación en macOS
 
 ### 1. Instalar con Homebrew
 
@@ -36,7 +36,7 @@ jfrog version 2.59.0
 ```
 
 
-## 🔐 Configuración inicial
+### 🔐 Configuración inicial
 
 Antes de usar el CLI, debes registrar tu servidor Artifactory:
 
@@ -55,7 +55,7 @@ jfrog config show
 ```
 
 
-## 🧱 Comandos Básicos
+### 🧱 Comandos Básicos
 
 ### 📤 Subir artefactos
 
@@ -118,7 +118,7 @@ jfrog rt s "libs-release-local/*.jar" --props "version=1.0.0"
 ```
 
 
-## 🧩 Propiedades de Artefactos
+### 🧩 Propiedades de Artefactos
 
 Artifactory permite añadir **propiedades personalizadas** a tus archivos:
 
@@ -133,7 +133,7 @@ jfrog rt gp "mi-repo-local/app.zip"
 ```
 
 
-## 🧱 Gestión de Builds
+### 🧱 Gestión de Builds
 
 JFrog CLI permite definir y publicar builds completos (útil para trazabilidad).
 
@@ -150,9 +150,9 @@ jfrog rt bp miBuild 1
 
 Consultar builds en Artifactory → pestaña **Builds**.
 
----
 
-## 🧰 Limpieza y Mantenimiento
+
+### 🧰 Limpieza y Mantenimiento
 
 Eliminar versiones antiguas o artefactos no usados:
 
@@ -172,7 +172,7 @@ Borrar configuración del CLI:
 jfrog config remove artifactory-server
 ```
 
-## 🚀 Automatizaciones Útiles (macOS Terminal)
+### 🚀 Automatizaciones Útiles (macOS Terminal)
 
 ### Subir automáticamente el build actual
 
@@ -193,7 +193,7 @@ chmod +x upload_build.sh
 
 
 
-## 🔒 Seguridad
+### 🔒 Seguridad
 
 - Usa **tokens de acceso** en lugar de contraseñas.
 - Evita subir credenciales a Git.
@@ -205,7 +205,7 @@ chmod +x upload_build.sh
 
 
 
-## 📚 Recursos Oficiales
+### 📚 Recursos Oficiales
 
 - 🏠 Sitio oficial: [https://jfrog.com](https://jfrog.com)
 - 📘 Documentación CLI: [https://jfrog.com/getcli/](https://jfrog.com/getcli/)
@@ -214,7 +214,7 @@ chmod +x upload_build.sh
 
 
 
-## 🧾 Resumen rápido de comandos
+### 🧾 Resumen rápido de comandos
 
 | Comando | Descripción |
 |----------|--------------|

@@ -1,6 +1,6 @@
-# 🧩 Guía Práctica de JFrog Artifactory
+### 🧩 Guía Práctica de JFrog Artifactory
 
-## 📘 Introducción
+### 📘 Introducción
 
 **JFrog Artifactory** es un repositorio universal de artefactos que centraliza y gestiona los binarios generados durante el desarrollo de software.
 
@@ -13,7 +13,7 @@ JFrog es la empresa creadora de esta herramienta, junto con otras soluciones com
 - **JFrog Mission Control** → gestión centralizada de múltiples instancias
 
 
-## 🏗️ Conceptos Clave
+### 🏗️ Conceptos Clave
 
 | Tipo de Repositorio | Descripción |
 |----------------------|-------------|
@@ -22,7 +22,7 @@ JFrog es la empresa creadora de esta herramienta, junto con otras soluciones com
 | **Virtual** | Agrupa varios repositorios (locales y remotos) bajo una misma URL de acceso. |
 
 
-## ⚙️ Instalación (Local con Docker)
+### ⚙️ Instalación (Local con Docker)
 
 Si quieres una instalación rápida de **Artifactory OSS (Open Source)**:
 
@@ -38,7 +38,7 @@ docker run --name artifactory -d -p 8081:8081 -p 8082:8082   -v artifactory-data
   ```
 
 
-## 🌍 Versiones Disponibles
+### 🌍 Versiones Disponibles
 
 | Tipo | Descripción |
 |------|--------------|
@@ -49,7 +49,7 @@ docker run --name artifactory -d -p 8081:8081 -p 8082:8082   -v artifactory-data
 
 
 
-## 🧱 Ejemplo de Uso con npm
+### 🧱 Ejemplo de Uso con npm
 
 ### 1. Configurar el archivo `.npmrc`
 
@@ -73,7 +73,7 @@ npm install mi-paquete
 
 
 
-## 🍎 Ejemplo de Uso con CocoaPods
+### 🍎 Ejemplo de Uso con CocoaPods
 
 En tu `Podfile` puedes configurar el repositorio:
 
@@ -94,7 +94,7 @@ pod install
 ```
 
 
-## 🔄 Integración con CI/CD
+### 🔄 Integración con CI/CD
 
 Artifactory se integra fácilmente con:
 
@@ -127,7 +127,7 @@ jobs:
 ```
 
 
-## 🧩 Ventajas de Usar Artifactory
+### 🧩 Ventajas de Usar Artifactory
 
 - Centralización de binarios y dependencias.
 - Repositorios cacheados para mayor velocidad.
@@ -138,7 +138,7 @@ jobs:
 
 
 
-## 🧰 Limpieza y Mantenimiento
+### 🧰 Limpieza y Mantenimiento
 
 Para limpiar versiones antiguas o artefactos no usados:
 - Usa políticas de limpieza (Retention Policies).
@@ -162,7 +162,7 @@ jfrog rt download repo-local/myartifact.zip .
 
 ---
 
-## 🔐 Seguridad
+### 🔐 Seguridad
 
 - Control de acceso por usuario/grupo.
 - Tokens de acceso.
@@ -171,7 +171,7 @@ jfrog rt download repo-local/myartifact.zip .
 
 
 
-## 📚 Recursos Oficiales
+### 📚 Recursos Oficiales
 
 - 🏠 Sitio oficial: [https://jfrog.com](https://jfrog.com)
 - 📘 Documentación de Artifactory: [https://jfrog.com/artifactory/](https://jfrog.com/artifactory/)
@@ -180,7 +180,7 @@ jfrog rt download repo-local/myartifact.zip .
 
 
 
-## 🧾 Resumen Rápido
+### 🧾 Resumen Rápido
 
 | Comando / Acción | Descripción |
 |------------------|--------------|
