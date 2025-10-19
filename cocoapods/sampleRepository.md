@@ -142,4 +142,104 @@ end
 
 ´´´
 
+### Plantillas para desarrollo local 
+#### Opción A
+
+Ideal si estás desarrollando tu framework y lo pruebas en tus propios proyectos
+
+´´´
+Pod::Spec.new do |s|
+  s.name             = "MiFramework"
+  s.version          = "1.0.0"
+  s.summary          = "Un framework local para pruebas con CocoaPods."
+  s.description      = <<-DESC
+    MiFramework es un ejemplo de librería local desarrollada en Swift.
+    Se usa para probar la integración con CocoaPods en modo desarrollo.
+  DESC
+
+  s.homepage         = "https://github.com/eduardofulgencio/MiFramework"
+  s.license          = { :type => "MIT", :file => "LICENSE" }
+  s.author           = { "Eduardo Fulgencio" => "eduardofulgenciocomendeiro@gmail.com" }
+
+  s.platform         = :ios, "15.0"
+  s.swift_version    = "5.9"
+
+  # 👇 Esta línea es ignorada si usas `:path` en el Podfile,
+  # pero se puede dejar como referencia.
+  s.source           = { :path => "." }
+
+  # 📂 Ruta a los archivos fuente dentro del framework
+  s.source_files     = "Sources/**/*.{swift}"
+
+  # 🧾 Si tienes recursos (imágenes, JSON, etc.)
+  # s.resources      = "Resources/**/*"
+
+  # 💡 Si usas frameworks del sistema o librerías externas
+  # s.frameworks     = "UIKit", "SwiftUI"
+end
+
+´´´
+
+### Profile de tu app 
+
+´´´
+platform :ios, '15.0'
+use_frameworks!
+
+target 'UseCocoaPodsLocal' do
+  pod 'MiFramework', :path => '/Users/eofc/Projects/MiFramework'
+end
+
+´´´
+
+### Plantillas para desarrollo local 
+#### Opción B
+
+Usa esta versión si mantienes un repositorio de specs 
+(coo /Users/eofc/Projects/repo-local) y publicas versiones
+
+´´´
+Pod::Spec.new do |s|
+  s.name             = "MiFramework"
+  s.version          = "1.0.0"
+  s.summary          = "Framework local para distribución mediante repo-local."
+  s.description      = <<-DESC
+    MiFramework es un ejemplo de librería CocoaPods mantenida localmente
+    y versionada mediante un repositorio de especificaciones.
+  DESC
+
+  s.homepage         = "https://github.com/eduardofulgencio/MiFramework"
+  s.license          = { :type => "MIT", :file => "LICENSE" }
+  s.author           = { "Eduardo Fulgencio" => "eduardofulgenciocomendeiro@gmail.com" }
+
+  s.platform         = :ios, "15.0"
+  s.swift_version    = "5.9"
+
+  # 👇 Aquí defines de dónde obtiene el código
+  s.source           = { :git => "file:///Users/eofc/Projects/MiFramework", :tag => s.version.to_s }
+
+  s.source_files     = "Sources/**/*.{swift}"
+  # s.resources      = "Resources/**/*"
+  # s.frameworks     = "UIKit", "SwiftUI"
+end
+
+´´´
+
+Podfile 
+
+´´´
+source '/Users/eofc/Projects/repo-local'
+source 'https://cdn.cocoapods.org/'
+
+platform :ios, '15.0'
+use_frameworks!
+
+target 'UseCocoaPodsLocal' do
+  pod 'MiFramework', '1.0.0'
+end
+
+´´´
+
+
+
 © 2025 — Ejemplo educativo para desarrolladores iOS que trabajan con CocoaPods locales.
