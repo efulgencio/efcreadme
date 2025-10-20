@@ -146,6 +146,26 @@ Envía los commits de tu repositorio local al remoto (GitHub).
 git push
 ```
 
+### Crear una rama
+
+```bash
+
+# Crea una rama
+git branch nombre-de-la-rama
+
+git branch feature/nueva-funcionalidad
+
+# Cambia a la rama creada
+
+git branch feature/nueva-funcionalidad
+
+# Con las sintaxis moderna
+
+git switch nombre-de-la-rama
+
+
+```
+
 
 ### Cómo revertir cambios en Git
 
