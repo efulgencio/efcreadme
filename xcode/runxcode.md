@@ -36,3 +36,4 @@ Thread model: posix
 InstalledDir: /Applications/Xcode_16.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 eofc@ESPC028208 ~ %
 ```
+
