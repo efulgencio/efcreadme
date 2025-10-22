@@ -33,25 +33,12 @@ Text(EFCSPM.hello())
 ```
 
 
-## 📱 Demo iOS
+### 📱 Demo iOS
 
 En la carpeta `Example/` encontrarás un proyecto Xcode con una pequeña app SwiftUI que importa y muestra funciones del paquete.
 
 
-## 👤 Autor
-
-**Eduardo Fulgencio Comendeiro**  
-📧 [eduardofulgenciocomendeiro@gmail.com](mailto:eduardofulgenciocomendeiro@gmail.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/eduardofulgenciocomendeiro)  
-📦 [GitHub](https://github.com/eduardofulgencio)
-
-
-
-## 📜 Licencia
-
-MIT License
-
-´´´
+```
 Explicación del contenido
 Package.swift
 
@@ -206,4 +193,17 @@ Resumen
 | `targets`             | Módulos internos: código fuente y tests               |
 
 
-´´´
+```
+
+### 👤 Autor
+
+**Eduardo Fulgencio Comendeiro**  
+📧 [eduardofulgenciocomendeiro@gmail.com](mailto:eduardofulgenciocomendeiro@gmail.com)  
+💼 [LinkedIn](https://www.linkedin.com/in/eduardofulgenciocomendeiro)  
+📦 [GitHub](https://github.com/eduardofulgencio)
+
+
+
+## 📜 Licencia
+
+MIT License
